@@ -2,7 +2,7 @@
 
 ## Text and Fonts
 
-### color
+###```color```
 The color property is used to set the color of the text. The color is specified by:
   - a color name - like "red"
   - a HEX value - like "#ff0000"

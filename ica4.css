@@ -1,0 +1,15 @@
+.ica-section {
+  height: 100vh;
+  width: 100vw;
+}
+
+.position-practice {
+  /* centered div with a border of 5px with border radius of 5px */
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  border: 5px solid black;
+  border-radius: 5px;
+}
+
+/* INSERT YOUR CSS STYLES BELOW THIS COMMENT */

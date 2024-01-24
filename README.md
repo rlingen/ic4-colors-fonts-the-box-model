@@ -18,7 +18,7 @@ Colors are specified using predefined color names, or RGB, HEX, HSL values. RGB 
   - HSL values:
     - hsl(hue, saturation, lightness)
 
-## Text and Fonts
+## Text
 
 ### color
 The color property is used to set the color of the text. The color is specified by:
@@ -76,6 +76,17 @@ The text-transform property is used to specify uppercase and lowercase letters i
 }
 ```
 
+## Fonts
+In CSS there are five generic font families:
+  - Serif 				    → have a small stroke/curve at the edges of each letter.
+  - Sans-serif 			  → fonts have clean lines (no small strokes attached).
+  - Monospace fonts 	→ all the letters have the same fixed width. 
+  - Cursive 				  → imitate human handwriting.
+  - Fantasy 				  →  are decorative/playful fonts.
+All the different font names belong to one of the generic font families.
+### Sans vs. Sans-serif
+Sans-serif fonts are fonts which don't have the small strokes at the end of each character. The word "sans" means "without" in French. Sans-serif fonts is normally used for shorter texts (e.g. headlines or captions), as it's the preferred, more readable format on webpages.
+
 ### font-family
 The font-family property is used to specify the font to be used for an element.
 ```css
@@ -128,4 +139,42 @@ p {
 }
 ```
 
+## Sizing
+Elements can be sized using a number of different number representations.
+  - px (exact pixel count)
 
+### width
+The width property is used to specify the width of an element.
+```css
+div {
+  width: 300px;
+}
+```
+### height
+The height property is used to specify the height of an element.
+```css
+div {
+  height: 300px;
+}
+```
+### max-width
+The max-width property is used to set the maximum width of an element.
+```css
+div {
+  max-width: 500px;
+}
+```
+### max-height
+The max-height property is used to set the maximum height of an element.
+```css
+div {
+  max-height: 500px;
+}
+```
+### min-width
+The min-width property is used to set the minimum width of an element.
+```css
+div {
+  min-width: 300px;
+}
+```

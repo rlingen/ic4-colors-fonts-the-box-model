@@ -141,7 +141,8 @@ In CSS there are five generic font families:
 
 All the different font names belong to one of the generic font families. It's important to understand the difference between the different font families, as they are used for different purposes.
 
-> [!TIP] Sans vs. Sans-serif
+> [!TIP]
+> Sans vs. Sans-serif
 > Sans-serif fonts are fonts which don't have the small strokes at the end of each character. The word "sans" means "without" in French. Sans-serif fonts is normally used for shorter texts (e.g. headlines or captions), as it's the preferred, more readable format on webpages.
  
 This activity will cover the following font properties:
@@ -273,12 +274,24 @@ While it's imporant to know all the individual styling properties for borders, a
   }
 ```
 ---
+## The Box Model
+The CSS box model is a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below shows the box model:
+![The CSS Box Model](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+
+---
 ## Backgrounds
 Background colors and images are the core concept of visual connection in Web Development. Backgrounds can be styled with a number of different properties.
   - `background-color` → defines the color of the background. Same color rules apply as in the Colors section above.
   ```css
     div {
       background-color: red;
+    }
+  ```
+    - background colors can be set to be `transparent`, which will allow the background color of the parent element to show through.
+    - you can also set the background color to a `linear-gradient`, which will create a gradient of colors. The gradient direction can be set by specifying the direction of the gradient, with `to direction` or an angle (like `90deg`).
+  ```css
+    div {
+      background-color: linear-gradient(to right, red, blue);
     }
   ```
   - `background-image` → defines the image to be used as the background. The image can be a URL to an image, or a local file path.
@@ -298,15 +311,12 @@ Background colors and images are the core concept of visual connection in Web De
     }
   ```
   - `background-position` → defines the position of the background image.
-    - top left
-    - top center
-    - top right
-    - center left
-    - center center
-    - center right
-    - bottom left
-    - bottom center
-    - bottom right
+    - specified by two values: horizontal and vertical position. if only one value is specified, the other value will be set to center. Possible values are: 
+    - top 
+    - bottom
+    - left
+    - right
+    - center
   ```css
     div {
       background-position: center center;

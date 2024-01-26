@@ -276,9 +276,10 @@ While it's imporant to know all the individual styling properties for borders, a
 ---
 ## The Box Model
 The CSS box model is a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below shows the box model:
-![The CSS Box Model](https://github.com/is120-winter24/ic4-fonts-sizing-backgrounds-positioning/blob/main/the-box-model?raw=true)
+![The CSS Box Model](https://miro.medium.com/v2/resize:fit:1124/1*lBtbo05WfLoc_mBLDQfqkw.png)
 
-
+> [!IMPORTANT]
+> The box model is one of the most key nuances of CSS to understand, as it is the basis for all layout in Web Dev. The box model is the reason why you can't set the width of an element to 100% and have it fill the entire width of the page. Make sure you have this down!
 ---
 ## Backgrounds
 Background colors and images are the core concept of visual connection in Web Development. Backgrounds can be styled with a number of different properties.

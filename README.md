@@ -350,14 +350,15 @@ Positioning is the most important aspect of CSS. Positioning is what allows you 
   - Absolute
   - Fixed
   - Sticky
+
 The most common are Static, Relative, and Absolute. Fixed and Sticky are used less often, but are still important to know.
 
 ### How to Position
 To position an element, you must first set the `position` property of the element. Then, you can use the `top`, `bottom`, `left`, and `right` properties to specify where you want the element to be positioned. The `top` and `bottom` properties specify the vertical position, and the `left` and `right` properties specify the horizontal position.
-  - left: 20px; → the element is positioned 20px from the left edge of the browser window
-  - right: 30em; → the element is positioned 30em from the right edge of the browser window
-  - top: 50%; → the element is positioned 50% of the height of the browser window
-  - bottom: 10vh → the element is positioned 10% of the viewport height from the bottom of the browser window
+  - `left: 20px;` → the element is positioned 20px from the left edge of the browser window
+  - `right: 30em;` → the element is positioned 30em from the right edge of the browser window
+  - `top: 50%;` → the element is positioned 50% of the height of the browser window
+  - `bottom: 10vh;` → the element is positioned 10% of the viewport height from the bottom of the browser window
 ```css
   div {
     position: relative;

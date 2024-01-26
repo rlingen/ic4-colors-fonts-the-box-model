@@ -95,7 +95,7 @@ Text can be styled in a number of different ways. This activity will cover the f
           color: red;
         }
       ```
-    - ```html
+    ```html
         <p color: rgb(255,0,0);>This is a paragraph.</p>
       ```
   - `text-align` → used to set the horizontal alignment of a text, within it's parent element. Justified means that the text is aligned to both the left and right margins.
@@ -103,7 +103,7 @@ Text can be styled in a number of different ways. This activity will cover the f
     - center
     - right
     - justify
-    - ```css
+  ```css
         h1 {
           text-align: center;
         }
@@ -116,7 +116,7 @@ Text can be styled in a number of different ways. This activity will cover the f
     - underline
     - overline
     - line-through
-    - ```css
+  ```css
         .text-underline {
           text-decoration: underline;
         }
@@ -126,7 +126,7 @@ Text can be styled in a number of different ways. This activity will cover the f
     - capitalize
     - uppercase
     - lowercase
-    - ```css
+  ```css
         .uppercased-div {
           text-transform: uppercase;
         }
@@ -148,21 +148,21 @@ All the different font names belong to one of the generic font families. It's im
  
 This activity will cover the following font properties:
   - `font-family` → used to specify the font to be used for an element.
-    - ```css
+  ```css
         p {
           font-family: "Times New Roman", Times, serif;
         }
       ```
       Here, the browser will first attempt to use the font "Times New Roman". If it's not available, it will attempt to use the font "Times", and the same pattern for using the generic font family serif.
   - `font-size` → used to specify the size of the font.
-    - ```css
+  ```css
         p {
           font-size: 20px;
         }
       ```
       Font size can only be specified in px (pixels), em (relative to the font-size of the element), or rem (relative to the font-size of the root element).
   - `line-height` → used to specify the space between lines.
-    - ```css
+  ```css
         p {
           line-height: 1.5;
         }
@@ -172,7 +172,7 @@ This activity will cover the following font properties:
     - normal
     - italic
     - oblique
-    - ```css
+  ```css
         p {
           font-style: italic;
         }
@@ -186,7 +186,7 @@ This activity will cover the following font properties:
     - 200
     - ...
     - 900
-    - ```css
+  ```css
         p {
           font-weight: bold;
         }
@@ -205,33 +205,33 @@ Elements can be sized using a number of different number representations.
 
 This activity will cover the following sizing properties:
 - `width`, `max-width`, `min-width` → defines the width of an element, or the minimum/maximum width of an element.
-  - ```css
+```css
       div {
         width: auto;
         max-width: 500px;
       }
     ```
 - `height`, `max-height`, `min-height` → defines the height of an element, or the minimum/maximum height of an element.
-  - ```css
+```css
       div {
         height: 30%;
         min-height: 50px;
       }
     ```
 - `aspect-ratio` → defines the aspect ratio of an element. This is used most often for images and videos, and should be used in conjunction with `width` or `height` being set as a dynamic number.
-  - ```css
+```css
       div {
         aspect-ratio: 16 / 9;
       }
     ```
 - `margin` → defines the space between the border of an element and its neighboring elements.
-  - ```css
+```css
       div {
         margin: 10px;
       }
     ```
 - `padding` → defines the space between the border of an element and its content.
-  - ```css
+```css
       div {
         padding: 10px;
       }
@@ -250,19 +250,19 @@ Elements can be styled with borders. Borders can be styled with a number of diff
   - `border-width` → defines the width of the border.
     - can be defined by description: thin, medium, thick
     - or px
-    - ```css
+  ```css
         div {
           border-width: 5px;
         }
       ```
   - `border-color` → defines the color of the border. Same color rules apply as in the Colors section above.
-    - ```css
+  ```css
         div {
           border-color: red;
         }
       ```
   - `border-radius` → defines the radius (degree of curvature) of the border.
-    - ```css
+  ```css
         div {
           border-radius: 5px;
         }
@@ -278,13 +278,13 @@ While it's imporant to know all the individual styling properties for borders, a
 ## Backgrounds
 Background colors and images are the core concept of visual connection in Web Development. Backgrounds can be styled with a number of different properties.
   - `background-color` → defines the color of the background. Same color rules apply as in the Colors section above.
-    - ```css
+  ```css
         div {
           background-color: red;
         }
       ```
   - `background-image` → defines the image to be used as the background. The image can be a URL to an image, or a local file path.
-    - ```css
+  ```css
         div {
           background-image: url("url/to/image.png");
         }
@@ -294,7 +294,7 @@ Background colors and images are the core concept of visual connection in Web De
     - repeat-x
     - repeat-y
     - no-repeat
-    - ```css
+  ```css
         div {
           background-repeat: no-repeat;
         }
@@ -309,7 +309,7 @@ Background colors and images are the core concept of visual connection in Web De
     - bottom left
     - bottom center
     - bottom right
-    - ```css
+  ```css
         div {
           background-position: center center;
         }
@@ -317,7 +317,7 @@ Background colors and images are the core concept of visual connection in Web De
   - `background-attachment` → defines whether the background image should scroll or be fixed.
     - scroll
     - fixed
-    - ```css
+  ```css
         div {
           background-attachment: fixed;
         }
@@ -326,7 +326,7 @@ Background colors and images are the core concept of visual connection in Web De
     - auto
     - cover
     - contain
-    - ```css
+  ```css
         div {
           background-size: cover;
         }

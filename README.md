@@ -1,8 +1,21 @@
 # ICA Fonts, Sizing, Backgrounds Positioning
-This In-Class Activity will take you through the basics of writing CSS and some of the elementary the different ways to style your HTML elements. The specific instructions for the Activity will be listed at the end of this README.
+This In-Class Activity will take you through the basics of writing CSS and some of the elementary the different ways to style your HTML elements. The specific instructions for the Activity will be listed first in this README, with the full guide of CSS following.
 
 ---
 
+## ICA Instructions
+1. create 3 heading elements of the same type with different text sizes, using different sizing techniques
+Q2. create 3 heading elements of the same type with different colors, using different coloring techniques
+Q3. create 1 paragraph, 1 quote, and 1 blockquote element that have different font families font font stylings
+Q4. create 5 div tags, each of which are classed uniquely, and are sized using three different sizing techniques
+Q5. now for each of these div tags, color them uniquely
+Q6. create 3 div tags, each of which are classed uniquely, and give them three unique border styles (width, color, radii)
+Q7. recreate the image of the CSS box model using three embedded div tags
+Q8. Create a new page titled positioning.html. Add in the appropriate boilerplate with a link to ica4.css
+Q9. Create a container div of type .position-practice
+Q10. Create 5 divs inside of the container div, each of which are classed uniquely. These divs should represent each positioning technique with different styles
+
+---
 ## CSS
 CSS, or Cascading Style Sheets, is a fundamental technology in web development. Its primary purpose is to separate the structure and content of a webpage from its presentation. By using CSS, developers can control the visual styling of HTML elements, such as fonts, colors, spacing, and layout. This separation enhances maintainability and allows for consistent styling across a website.
 
@@ -49,7 +62,6 @@ CSS can be written in three ways:
   ```
 > [!TIP]
 > It's important to understand the difference between the three ways of writing CSS. Inline CSS is the least preferred method, as it is the least maintainable. Internal CSS is situational. External CSS is the preferred method, as it is the most maintainable and allows for the most flexibility.
-
 ---
 
 ## Colors in CSS
@@ -103,7 +115,6 @@ Text can be styled in a number of different ways. This activity will cover the f
     - underline
     - overline
     - line-through
-    - blink
     - ```css
         .text-underline {
           text-decoration: underline;
@@ -119,65 +130,8 @@ Text can be styled in a number of different ways. This activity will cover the f
           text-transform: uppercase;
         }
       ```
-
-  - font-family
-  - font-size
-  - line-height
-  - font-style
-  - font-weight
-
-
-### color
-The `color` property is used to set the color of the text. The color can be specified by the rules set in the Colors section above.
-```css
-p {
-  color: red;
-}
-```
-```html
-<p color: rgb(255,0,0);>This is a paragraph.</p>
-```
-
-### text-align
-The text-align property is used to set the horizontal alignment of a text, within it's parent element.
-  - left
-  - center
-  - right
-  - justify
-```css
-h1 {
-  text-align: center;
-}
-h3 {
-  text-align: right;
-}
-```
-
-### text-decoration
-The text-decoration property is used to set or remove decorations from text.
-  - none
-  - underline
-  - overline
-  - line-through
-  - blink
-```css
-.text-underline {
-  text-decoration: underline;
-}
-```
-
-### text-transform
-The text-transform property is used to specify uppercase and lowercase letters in a text.
-  - none
-  - capitalize
-  - uppercase
-  - lowercase
-```css
-.uppercased-div {
-  text-transform: uppercase;
-}
-```
-
+ 
+ ---
 ## Fonts
 In CSS there are five generic font families:
   - Serif 				    → have a small stroke/curve at the edges of each letter.
@@ -185,98 +139,133 @@ In CSS there are five generic font families:
   - Monospace fonts 	→ all the letters have the same fixed width. 
   - Cursive 				  → imitate human handwriting.
   - Fantasy 				  →  are decorative/playful fonts.
-All the different font names belong to one of the generic font families.
-### Sans vs. Sans-serif
-Sans-serif fonts are fonts which don't have the small strokes at the end of each character. The word "sans" means "without" in French. Sans-serif fonts is normally used for shorter texts (e.g. headlines or captions), as it's the preferred, more readable format on webpages.
 
-### font-family
-The font-family property is used to specify the font to be used for an element.
-```css
-p {
-  font-family: "Times New Roman", Times, serif;
-}
-h2 {
-  font-family: Arial, Helvetica, sans-serif;
-}
-```
-### font-size
-The font-size property is used to specify the size of the font.
-```css
-p {
-  font-size: 20px;
-}
-```
-### line-height
-The line-height property is used to specify the space between lines.
-```css
-p {
-  line-height: 1.5;
-}
-```
+All the different font names belong to one of the generic font families. It's important to understand the difference between the different font families, as they are used for different purposes.
 
-### font-style
-The font-style property is used to specify whether the font should be italic, oblique, or normal.
-  - normal
-  - italic
-  - oblique
-```css
-p {
-  font-style: italic;
-}
-```
+> [!TIP]Sans vs. Sans-serif
+> Sans-serif fonts are fonts which don't have the small strokes at the end of each character. The word "sans" means "without" in French. Sans-serif fonts is normally used for shorter texts (e.g. headlines or captions), as it's the preferred, more readable format on webpages.
+ 
+This activity will cover the following font properties:
+  - `font-family` → used to specify the font to be used for an element.
+    - ```css
+        p {
+          font-family: "Times New Roman", Times, serif;
+        }
+      ```
+      Here, the browser will first attempt to use the font "Times New Roman". If it's not available, it will attempt to use the font "Times", and the same pattern for using the generic font family serif.
+  - `font-size` → used to specify the size of the font.
+    - ```css
+        p {
+          font-size: 20px;
+        }
+      ```
+      Font size can only be specified in px (pixels), em (relative to the font-size of the element), or rem (relative to the font-size of the root element).
+  - `line-height` → used to specify the space between lines.
+    - ```css
+        p {
+          line-height: 1.5;
+        }
+      ```
+      Line height can be points, pixels, ems, and rems.
+  - `font-style` → used to specify the degree of italicization of a font.
+    - normal
+    - italic
+    - oblique
+    - ```css
+        p {
+          font-style: italic;
+        }
+      ```
+  - `font-weight` → used to specify how thick or thin characters in a text should be displayed.
+    - normal
+    - bold
+    - bolder
+    - lighter
+    - 100
+    - 200
+    - ...
+    - 900
+    - ```css
+        p {
+          font-weight: bold;
+        }
+      ```
 
-### font-weight
-The font-weight property is used to specify how thick or thin characters in a text should be displayed.
-  - normal
-  - bold
-  - bolder
-  - lighter
-  - 100
-  - 200
-  - ...
-  - 900
-```css
-p {
-  font-weight: bold;
-}
-```
-
+---
 ## Sizing
 Elements can be sized using a number of different number representations.
-  - px (exact pixel count)
+  - auto, the browser calculates the size
+  - pixel, exact pixel count (`px`)
+  - point, 1/72 of an inch (`pt`)
+  - element measure, relative to the font-size of the element (`em`)
+  - root element measure, relative to the font-size of the root element (`rem`)
+  - percentage, relative to the parent element (`%`)
+  - viewport height & width, relative to 1% the viewport (`vh`, `vw`, `vmin`, `vmax`)
 
-### width
-The width property is used to specify the width of an element.
-```css
-div {
-  width: 300px;
-}
-```
-### height
-The height property is used to specify the height of an element.
-```css
-div {
-  height: 300px;
-}
-```
-### max-width
-The max-width property is used to set the maximum width of an element.
-```css
-div {
-  max-width: 500px;
-}
-```
-### max-height
-The max-height property is used to set the maximum height of an element.
-```css
-div {
-  max-height: 500px;
-}
-```
-### min-width
-The min-width property is used to set the minimum width of an element.
-```css
-div {
-  min-width: 300px;
-}
-```
+This activity will cover the following sizing properties:
+- `width`, `max-width`, `min-width` → defines the width of an element, or the minimum/maximum width of an element.
+  - ```css
+      div {
+        width: auto;
+        max-width: 500px;
+      }
+    ```
+- `height`, `max-height`, `min-height` → defines the height of an element, or the minimum/maximum height of an element.
+  - ```css
+      div {
+        height: 30%;
+        min-height: 50px;
+      }
+    ```
+- `aspect-ratio` → defines the aspect ratio of an element. This is used most often for images and videos, and should be used in conjunction with `width` or `height` being set as a dynamic number.
+  - ```css
+      div {
+        aspect-ratio: 16 / 9;
+      }
+    ```
+- `margin` → defines the space between the border of an element and its neighboring elements.
+  - ```css
+      div {
+        margin: 10px;
+      }
+    ```
+- `padding` → defines the space between the border of an element and its content.
+  - ```css
+      div {
+        padding: 10px;
+      }
+    ```
+    
+---
+## Borders
+Elements can be styled with borders. Borders can be styled with a number of different properties.
+  - `border-style` → defines the style of the border.
+    - There are many different preset styles of borders, some of which are: none, dotted, dashed, solid, ridge, inset, outset.
+      ```css
+        div {
+          border-style: solid;
+        }
+      ```
+  - `border-width` → defines the width of the border.
+    - thin
+    - medium
+    - thick
+    - px
+    - ```css
+        div {
+          border-width: 1px;
+        }
+      ```
+  - `border-color` → defines the color of the border.
+    - ```css
+        div {
+          border-color: red;
+        }
+      ```
+  -
+`border` → defines the border of an element.
+  - ```css
+      div {
+        border: 1px solid black;
+      }
+    ```

@@ -15,6 +15,41 @@ selector {
 ```
 The Selector is the HTML element that you want to style. The Property is the type of style you want to apply to the element. The Value is the value of the property you want to apply to the element. Selectors can be designated by addressing the specific `element`, the `.class`, the `#id`, or `*` (all elements).
 
+CSS can be written in three ways:
+  - Inline → directly in the HTML element as a style attribute
+  ```html
+    <p style="color: red;">all of this text is red.</p>
+  ```
+  ```
+  - Internal → contained with the <html></html> tags of the document
+  ```html
+    <body>
+      <style>
+        p {
+          font-size: 16px;
+        }
+      </style>
+      <p>all of this text has font size 16px.</p>
+    </body>
+  ```
+  ```
+  - External → contained in a separate file, and linked to the HTML document
+  ```css
+    p {
+      font-size: 16px;
+    }
+  ```
+  ```html
+    <head>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <p>all of this text has font size 16px.</p>
+    </body>
+  ```
+> [!TIP]
+> It's important to understand the difference between the three ways of writing CSS. Inline CSS is the least preferred method, as it is the least maintainable. Internal CSS is situational. External CSS is the preferred method, as it is the most maintainable and allows for the most flexibility.
+
 ---
 
 ## Colors in CSS
@@ -41,16 +76,49 @@ RGB and HSL values can be specified with or without alpha channel (% of transpar
 
 ## Text
 Text can be styled in a number of different ways. This activity will cover the following text properties:
-  - `color`
-    - used to set the color of the text. The color can be specified by the rules set in the Colors section above.
+  - `color` → used to set the color of the text. The color can be specified by the rules set in the Colors section above.
     - ```css
         p {
           color: red;
         }
       ```
-  - `text-align`
-  - `text-decoration`
-  - `text-transform`
+    - ```html
+        <p color: rgb(255,0,0);>This is a paragraph.</p>
+      ```
+  - `text-align` → used to set the horizontal alignment of a text, within it's parent element. Justified means that the text is aligned to both the left and right margins.
+    - left
+    - center
+    - right
+    - justify
+    - ```css
+        h1 {
+          text-align: center;
+        }
+        h3 {
+          text-align: right;
+        }
+      ```
+  - `text-decoration` → used to set or remove decorations from text.
+    - none
+    - underline
+    - overline
+    - line-through
+    - blink
+    - ```css
+        .text-underline {
+          text-decoration: underline;
+        }
+      ```
+  - `text-transform` → used to specify uppercase and lowercase letters in a text.
+    - none
+    - capitalize
+    - uppercase
+    - lowercase
+    - ```css
+        .uppercased-div {
+          text-transform: uppercase;
+        }
+      ```
 
   - font-family
   - font-size

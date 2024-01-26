@@ -3,34 +3,64 @@ This In-Class Activity will take you through the basics of writing CSS and some 
 
 ---
 
-### Colors
-Colors are specified using predefined color names, or RGB, HEX, HSL values. RGB and HSL can be specified with or without alpha channel (% of transparency).
-  - predefined color names:
-    - red
-    - green
-    - blue
-    - salmon
-    - cyan
-    - ...
-    - gray
-    - lightgray
-  - RGB values:
-    - rgb(red, green, blue)
-  - HEX values:
-    - #rrggbb
-  - HSL values:
-    - hsl(hue, saturation, lightness)
+## CSS
+CSS, or Cascading Style Sheets, is a fundamental technology in web development. Its primary purpose is to separate the structure and content of a webpage from its presentation. By using CSS, developers can control the visual styling of HTML elements, such as fonts, colors, spacing, and layout. This separation enhances maintainability and allows for consistent styling across a website.
 
-### Text
+In CSS, rules are created to apply styles to HTML elements. A CSS rule consists of a selector, which targets an HTML element, and a declaration block containing one or more declarations. Declarations consist of properties and values.
+
+```css
+selector {
+  property: value;
+}
+```
+The Selector is the HTML element that you want to style. The Property is the type of style you want to apply to the element. The Value is the value of the property you want to apply to the element. Selectors can be designated by addressing the specific `element`, the `.class`, the `#id`, or `*` (all elements).
+
+---
+
+## Colors in CSS
+Colors are useful for styling your HTML elements. There are a number of different ways to specify colors in CSS. Colors are specified using predefined color names, or RGB, HEX, HSL values. RGB and HSL can be specified with or without alpha channel (% of transparency).
+  - predefined color names:
+    - `red`
+    - `green`
+    - `blue`
+    - `salmon`
+    - `cyan`
+    - ...
+    - `gray`
+    - `lightgray`
+  - HEX values:
+    - `#rrggbb`
+  - RGB values:
+    - `rgb(red, green, blue)`
+    - (where red, green, and blue are integers between 0 and 255)
+  - HSL values:
+    - `hsl(hue, saturation, lightness)` 
+    - (where hue is a degree on the color wheel (from 0 to 360), saturation is a percentage value (0% being a shade of gray and 100% the full color), and lightness is also a percentage value (0% is black, 100% is white))
+RGB and HSL values can be specified with or without alpha channel (% of transparency). 
+---
+
+## Text
+Text can be styled in a number of different ways. This activity will cover the following text properties:
+  - `color`
+    - used to set the color of the text. The color can be specified by the rules set in the Colors section above.
+    - ```css
+p {
+  color: red;
+}
+```
+  - `text-align`
+  - `text-decoration`
+  - `text-transform`
+
+  - font-family
+  - font-size
+  - line-height
+  - font-style
+  - font-weight
 
 
 ### color
-The color property is used to set the color of the text. The color is specified by:
-  - predefined color names
-  - RGB values
-  - HEX values
-  - HSL values
-
+The `color` property is used to set the color of the text. The color can be specified by the rules set in the Colors section above.
 ```css
 p {
   color: red;

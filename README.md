@@ -1,6 +1,9 @@
-# ic4-fonts-sizing-backgrounds-positiong
+# ICA Fonts, Sizing, Backgrounds Positioning
+This In-Class Activity will take you through the basics of writing CSS and some of the elementary the different ways to style your HTML elements. The specific instructions for the Activity will be listed at the end of this README.
 
-## Colors
+---
+
+### Colors
 Colors are specified using predefined color names, or RGB, HEX, HSL values. RGB and HSL can be specified with or without alpha channel (% of transparency).
   - predefined color names:
     - red
@@ -18,7 +21,8 @@ Colors are specified using predefined color names, or RGB, HEX, HSL values. RGB 
   - HSL values:
     - hsl(hue, saturation, lightness)
 
-## Text
+### Text
+
 
 ### color
 The color property is used to set the color of the text. The color is specified by:

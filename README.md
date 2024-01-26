@@ -44,10 +44,10 @@ Text can be styled in a number of different ways. This activity will cover the f
   - `color`
     - used to set the color of the text. The color can be specified by the rules set in the Colors section above.
     - ```css
-p {
-  color: red;
-}
-```
+        p {
+          color: red;
+        }
+      ```
   - `text-align`
   - `text-decoration`
   - `text-transform`

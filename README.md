@@ -280,7 +280,7 @@ The CSS box model is a box that wraps around every HTML element. It consists of:
 ![The CSS Box Model](https://miro.medium.com/v2/resize:fit:424/1*lBtbo05WfLoc_mBLDQfqkw.png)
 
 > [!IMPORTANT]
-> The box model is one of the most key nuances of CSS to understand, as it is the basis for all layout in Web Dev. The box model is the reason why you can't set the width of an element to 100% and have it fill the entire width of the page. Make sure you have this down!
+> The box model is one of the key nuances of CSS to understand, as it is the basis for all layout in Web Dev. The box model is the reason why you can't set the width of an element to 100% and have it fill the entire width of the page. Make sure you have this down!
 ---
 ## Backgrounds
 Background colors and images are the core concept of visual connection in Web Development. Backgrounds can be styled with a number of different properties.
@@ -290,11 +290,11 @@ Background colors and images are the core concept of visual connection in Web De
       background-color: red;
     }
   ```
-    - background colors can be set to be `transparent`, which will allow the background color of the parent element to show through.
-    - you can also set the background color to a `linear-gradient`, which will create a gradient of colors. The gradient direction can be set by specifying the direction of the gradient, with `to direction` or an angle (like `90deg`).
+  - background colors can be set to be `transparent`, which will allow the background color of the parent element to show through.
+  - you can also set the background color to a `linear-gradient`, which will create a gradient of colors. The gradient direction can be set by specifying the direction of the gradient, with `to direction` or an angle (like `90deg`).
   ```css
     div {
-      background-color: linear-gradient(to right, red, blue);
+      background-color: linear-gradient(to right, #e66465, #9198e5);
     }
   ```
   - `background-image` → defines the image to be used as the background. The image can be a URL to an image, or a local file path.
@@ -325,7 +325,7 @@ Background colors and images are the core concept of visual connection in Web De
       background-position: center center;
     }
   ```
-  - `background-attachment` → defines whether the background image should scroll or be fixed.
+  - `background-attachment` → defines whether the background image should scroll or be fixed. Two possible values:
     - scroll
     - fixed
   ```css
@@ -335,8 +335,8 @@ Background colors and images are the core concept of visual connection in Web De
   ```
   - `background-size` → defines the size of the background image.
     - auto
-    - cover
-    - contain
+    - cover, resizes the background image to cover the entire container, may stretch or cut the edges to do so.
+    - contain, resizes the background image to make sure the image is fully visible.
   ```css
     div {
       background-size: cover;
@@ -367,7 +367,7 @@ To position an element, you must first set the `position` property of the elemen
 ```
 
 ### Static
-Static positioning is the default positioning of an element. It is always positioned according to the normal flow of the page. Static positioned elements are not affected by the top, bottom, left, and right properties.
+Static positioning is the default positioning of an element. It is always positioned according to the normal flow of the page. Static positioned elements are NOT affected by the top, bottom, left, and right properties.
 
 ### Relative
 Relative positioning is the positioning of an element relative to its normal position. Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
@@ -383,5 +383,3 @@ Sticky positioning is a hybrid of relative and fixed positioning. The element is
 
 > [!TIP]
 > Fixed and Sticky positioning are often used primarily for navigation bars, as they allow the navigation bar to stay in the same position on the page, even when the user scrolls. This will be a handy technique to know for styling pages on a larger scale.
-
-

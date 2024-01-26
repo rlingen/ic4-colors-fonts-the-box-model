@@ -4,16 +4,19 @@ This In-Class Activity will take you through the basics of writing CSS and some 
 ---
 
 ## ICA Instructions
-1. create 3 heading elements of the same type with different text sizes, using different sizing techniques
-Q2. create 3 heading elements of the same type with different colors, using different coloring techniques
-Q3. create 1 paragraph, 1 quote, and 1 blockquote element that have different font families font font stylings
-Q4. create 5 div tags, each of which are classed uniquely, and are sized using three different sizing techniques
-Q5. now for each of these div tags, color them uniquely
-Q6. create 3 div tags, each of which are classed uniquely, and give them three unique border styles (width, color, radii)
-Q7. recreate the image of the CSS box model using three embedded div tags
-Q8. Create a new page titled positioning.html. Add in the appropriate boilerplate with a link to ica4.css
-Q9. Create a container div of type .position-practice
-Q10. Create 5 divs inside of the container div, each of which are classed uniquely. These divs should represent each positioning technique with different styles
+  1. create 3 heading elements of the same type with different text sizes, using different sizing techniques
+  2. create 3 heading elements of the same type with different colors, using different coloring techniques
+  3. create 1 paragraph, 1 quote, and 1 blockquote element that have different font families font font stylings
+  4. create 5 div tags, each of which are classed uniquely, and are sized using three different sizing techniques
+  5. now for each of these div tags, color them uniquely
+  6. create 3 div tags, each of which are classed uniquely, and give them three unique border styles (width, color, radii)
+  7. recreate the image of the CSS box model using three embedded div tags
+  8. Create a new page titled positioning.html. Add in the appropriate boilerplate with a link to ica4.css
+  9. Create a container div of type `.position-practice`
+  10. Create 5 divs inside of the container div, each of which are classed uniquely. These divs should represent each positioning technique with different styles
+
+> [!TIP]
+> CSS is a very powerful tool, but the learning curve can be extrememly steep. It's important to have a solid foundational understanding of the core properities used in CSS. Try mixing things up as you go along with the Activity instructions. Try to use different sizing techniques, different colors, different fonts, etc. to get a feel for how CSS works; the more you stretch your understanding of CSS, the easier it will be to learn more advanced techniques.
 
 ---
 ## CSS
@@ -63,7 +66,6 @@ CSS can be written in three ways:
 > [!TIP]
 > It's important to understand the difference between the three ways of writing CSS. Inline CSS is the least preferred method, as it is the least maintainable. Internal CSS is situational. External CSS is the preferred method, as it is the most maintainable and allows for the most flexibility.
 ---
-
 ## Colors in CSS
 Colors are useful for styling your HTML elements. There are a number of different ways to specify colors in CSS. Colors are specified using predefined color names, or RGB, HEX, HSL values. RGB and HSL can be specified with or without alpha channel (% of transparency).
   - predefined color names:
@@ -85,11 +87,10 @@ Colors are useful for styling your HTML elements. There are a number of differen
     - (where hue is a degree on the color wheel (from 0 to 360), saturation is a percentage value (0% being a shade of gray and 100% the full color), and lightness is also a percentage value (0% is black, 100% is white))
 RGB and HSL values can be specified with or without alpha channel (% of transparency). 
 ---
-
 ## Text
 Text can be styled in a number of different ways. This activity will cover the following text properties:
   - `color` → used to set the color of the text. The color can be specified by the rules set in the Colors section above.
-    - ```css
+    ```css
         p {
           color: red;
         }
@@ -247,25 +248,86 @@ Elements can be styled with borders. Borders can be styled with a number of diff
         }
       ```
   - `border-width` → defines the width of the border.
-    - thin
-    - medium
-    - thick
-    - px
+    - can be defined by description: thin, medium, thick
+    - or px
     - ```css
         div {
-          border-width: 1px;
+          border-width: 5px;
         }
       ```
-  - `border-color` → defines the color of the border.
+  - `border-color` → defines the color of the border. Same color rules apply as in the Colors section above.
     - ```css
         div {
           border-color: red;
         }
       ```
-  -
-`border` → defines the border of an element.
-  - ```css
-      div {
-        border: 1px solid black;
-      }
-    ```
+  - `border-radius` → defines the radius (degree of curvature) of the border.
+    - ```css
+        div {
+          border-radius: 5px;
+        }
+      ```
+
+While it's imporant to know all the individual styling properties for borders, a much more common way is the short-hand form of just declaring the `border` property:
+```css
+  div {
+    border: size style color;
+  }
+```
+---
+## Backgrounds
+Background colors and images are the core concept of visual connection in Web Development. Backgrounds can be styled with a number of different properties.
+  - `background-color` → defines the color of the background. Same color rules apply as in the Colors section above.
+    - ```css
+        div {
+          background-color: red;
+        }
+      ```
+  - `background-image` → defines the image to be used as the background. The image can be a URL to an image, or a local file path.
+    - ```css
+        div {
+          background-image: url("url/to/image.png");
+        }
+      ```
+  - `background-repeat` → defines how the background image should be repeated.
+    - repeat (the background image is repeated both vertically and horizontally)
+    - repeat-x
+    - repeat-y
+    - no-repeat
+    - ```css
+        div {
+          background-repeat: no-repeat;
+        }
+      ```
+  - `background-position` → defines the position of the background image.
+    - top left
+    - top center
+    - top right
+    - center left
+    - center center
+    - center right
+    - bottom left
+    - bottom center
+    - bottom right
+    - ```css
+        div {
+          background-position: center center;
+        }
+      ```
+  - `background-attachment` → defines whether the background image should scroll or be fixed.
+    - scroll
+    - fixed
+    - ```css
+        div {
+          background-attachment: fixed;
+        }
+      ```
+  - `background-size` → defines the size of the background image.
+    - auto
+    - cover
+    - contain
+    - ```css
+        div {
+          background-size: cover;
+        }
+      ```

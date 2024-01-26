@@ -276,7 +276,8 @@ While it's imporant to know all the individual styling properties for borders, a
 ---
 ## The Box Model
 The CSS box model is a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below shows the box model:
-![The CSS Box Model](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![The CSS Box Model](https://github.com/is120-winter24/ic4-fonts-sizing-backgrounds-positioning/blob/main/the-box-model?raw=true)
+
 
 ---
 ## Backgrounds

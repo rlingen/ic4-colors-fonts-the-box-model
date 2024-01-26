@@ -276,6 +276,7 @@ While it's imporant to know all the individual styling properties for borders, a
 ---
 ## The Box Model
 The CSS box model is a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below shows the box model:
+
 ![The CSS Box Model](https://miro.medium.com/v2/resize:fit:424/1*lBtbo05WfLoc_mBLDQfqkw.png)
 
 > [!IMPORTANT]
@@ -341,3 +342,46 @@ Background colors and images are the core concept of visual connection in Web De
       background-size: cover;
     }
   ```
+---
+## Positioning
+Positioning is the most important aspect of CSS. Positioning is what allows you to layout your HTML elements in a specific way. There are five different positioning techniques:
+  - Static
+  - Relative
+  - Absolute
+  - Fixed
+  - Sticky
+The most common are Static, Relative, and Absolute. Fixed and Sticky are used less often, but are still important to know.
+
+### How to Position
+To position an element, you must first set the `position` property of the element. Then, you can use the `top`, `bottom`, `left`, and `right` properties to specify where you want the element to be positioned. The `top` and `bottom` properties specify the vertical position, and the `left` and `right` properties specify the horizontal position.
+  - left: 20px; → the element is positioned 20px from the left edge of the browser window
+  - right: 30em; → the element is positioned 30em from the right edge of the browser window
+  - top: 50%; → the element is positioned 50% of the height of the browser window
+  - bottom: 10vh → the element is positioned 10% of the viewport height from the bottom of the browser window
+```css
+  div {
+    position: relative;
+    top: 30px;
+    left: 50px;
+  }
+```
+
+### Static
+Static positioning is the default positioning of an element. It is always positioned according to the normal flow of the page. Static positioned elements are not affected by the top, bottom, left, and right properties.
+
+### Relative
+Relative positioning is the positioning of an element relative to its normal position. Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+
+### Absolute
+Absolute positioning is the positioning of an element relative to its parent element. The element is positioned relative to its first positioned (not static) ancestor element. If there is no such ancestor, it is positioned relative to the document body. Absolutely positioned elements can have margins, and they do not affect the position of other elements.
+
+### Fixed
+Fixed positioning is the positioning of an element relative to the browser window. The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to the screen's viewport and doesn't move when scrolled.
+
+### Sticky
+Sticky positioning is a hybrid of relative and fixed positioning. The element is treated as relative positioned until it crosses a specified threshold, at which point it is treated as fixed positioned.
+
+> [!TIP]
+> Fixed and Sticky positioning are often used primarily for navigation bars, as they allow the navigation bar to stay in the same position on the page, even when the user scrolls. This will be a handy technique to know for styling pages on a larger scale.
+
+

@@ -36,7 +36,6 @@ CSS can be written in three ways:
   ```html
     <p style="color: red;">all of this text is red.</p>
   ```
-  ```
   - Internal → contained with the <html></html> tags of the document
   ```html
     <body>
@@ -47,7 +46,6 @@ CSS can be written in three ways:
       </style>
       <p>all of this text has font size 16px.</p>
     </body>
-  ```
   ```
   - External → contained in a separate file, and linked to the HTML document
   ```css
@@ -143,7 +141,7 @@ In CSS there are five generic font families:
 
 All the different font names belong to one of the generic font families. It's important to understand the difference between the different font families, as they are used for different purposes.
 
-> [!TIP]Sans vs. Sans-serif
+> [!TIP] Sans vs. Sans-serif
 > Sans-serif fonts are fonts which don't have the small strokes at the end of each character. The word "sans" means "without" in French. Sans-serif fonts is normally used for shorter texts (e.g. headlines or captions), as it's the preferred, more readable format on webpages.
  
 This activity will cover the following font properties:
@@ -153,21 +151,21 @@ This activity will cover the following font properties:
       font-family: "Times New Roman", Times, serif;
     }
   ```
-      Here, the browser will first attempt to use the font "Times New Roman". If it's not available, it will attempt to use the font "Times", and the same pattern for using the generic font family serif.
+  Here, the browser will first attempt to use the font "Times New Roman". If it's not available, it will attempt to use the font "Times", and the same pattern for using the generic font family serif.
   - `font-size` → used to specify the size of the font.
   ```css
     p {
       font-size: 20px;
     }
   ```
-      Font size can only be specified in px (pixels), em (relative to the font-size of the element), or rem (relative to the font-size of the root element).
+  Font size can only be specified in px (pixels), em (relative to the font-size of the element), or rem (relative to the font-size of the root element).
   - `line-height` → used to specify the space between lines.
   ```css
     p {
       line-height: 1.5;
     }
   ```
-    Line height can be points, pixels, ems, and rems.
+  Line height can be points, pixels, ems, and rems.
   - `font-style` → used to specify the degree of italicization of a font.
     - normal
     - italic

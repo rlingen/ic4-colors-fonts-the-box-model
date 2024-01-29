@@ -236,6 +236,17 @@ This activity will cover the following sizing properties:
       padding: 10px;
     }
   ```
+  - `box-sizing` → defines how the width and height of an element are calculated.
+    - content-box, the width and height of the element only include the content, not the padding or border.
+    - border-box, the width and height of the element include the padding and border.
+  ```css
+    div {
+      box-sizing: border-box;
+    }
+  ```
+
+> [!TIP]
+> The `box-sizing` property is one of the most important properties in CSS. It is the reason why you can't set the width of an element to 100% and have it fill the entire width of the page. Make sure you have this down! You almost always want to set `box-sizing: border-box;` on all elements.
     
 ---
 ## Borders

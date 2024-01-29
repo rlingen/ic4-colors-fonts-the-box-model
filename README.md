@@ -193,6 +193,47 @@ This activity will cover the following font properties:
   ```
 
 ---
+## Inheritance in CSS
+Inheritance is the mechanism by which properties are applied not only to a specified element, but also to its descendants. Inheritance is a key concept in CSS, as it allows developers to write less code, and allows for more maintainable code. Inheritance is also the reason why you can set the font size of the `<body>` element, and all the other elements will inherit that font size. CSS stands for Cascading Style Sheets, and the cascading part refers to the way inheritance works in CSS.
+
+For the HTML:
+```html
+<section id="header">
+  <h1>Header</h1>
+  <h2>Subheader</h2>
+</section>
+```
+You can apply the same style to both the `<h1>` and `<h2>` elements by using inheritance:
+```css
+#header {
+  font-size: 16px;
+  color: lightgray;
+}
+```
+
+Or even use commas to apply the same style to multiple selectors
+```css
+h1, h2, h3 {
+  color: red;
+}
+```
+
+When designing web pages, you can decide at what level of specificity you want to style your HTML:
+- Use spaces to apply the same style to a specific element, inside a specific element.
+```css
+.grandparent-element .parent-element h3 {
+  color: red;
+}
+```
+
+- Use `>` to apply the same style to a specific element, inside a specific element, inside a specific element
+```css
+.grandparent-element > .parent-element > h3 {
+  color: red;
+}
+```
+
+---
 ## Sizing
 Elements can be sized using a number of different number representations.
   - auto, the browser calculates the size

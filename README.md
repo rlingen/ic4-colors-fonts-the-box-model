@@ -5,15 +5,15 @@ This In-Class Activity will take you through the basics of writing CSS and some 
 
 ## ICA Instructions
 Only make changes to `ica4.html` and `ica4.css` in the div tags labeled for the question.
-  1. create 3 heading elements of the same type with different text sizes, using different sizing techniques
-  2. create 3 heading elements of the same type with different colors, using different coloring techniques
-  3. create 1 paragraph, 1 quote, and 1 blockquote element that have different font families font font stylings
-  4. create 5 div tags, each of which are classed uniquely, and are sized using three different sizing techniques
-  5. for the unique div tags created in Q4, color them uniquely. At least two must be gradients.
-  6. create 3 div tags, each of which are classed uniquely, and give them three unique border styles (width, color, radii)
-  7. recreate the image of the CSS box model using three embedded div tags. This will be tough at first!
+  1. Create 3 heading elements of the same type with different text sizes, using different sizing techniques.
+  2. Create 3 heading elements of the same type with different colors, using different coloring techniques.
+  3. Create 1 paragraph, 1 quote, and 1 blockquote element that have different font families font font stylings.
+  4. Create 5 div tags, each of which are classed uniquely, and are sized using three different sizing techniques.
+  5. For the unique div tags created in Q4, color them uniquely. At least two must be gradients.
+  6. Create 3 div tags, each of which are classed uniquely, and give them three unique border styles (width, color, radii).
+  7. Recreate the image of the CSS box model using three embedded div tags. This will be tough at first!
   8. Create a new page titled `positioning.html`. Add in the appropriate boilerplate with a link to ica4.css in the `<head>` of the document. Ensure there is appropriate navigation between the `ica4.html` and `positioning.html` files.
-  9. Create a container div of class `.position-practice`
+  9. Create a container div of class `.position-practice`.
   10. Create 3 divs inside of the container div, each of which are classed uniquely. These divs should represent the three main (important) positioning techniques. Add text, colors, spacing, borders, sizing, and positionging to be able to differentiate between each positioning method.
 
 > [!TIP]

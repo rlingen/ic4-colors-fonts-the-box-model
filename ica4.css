@@ -1,7 +1,7 @@
 .ica-section {
   height: 100vh;
   width: 100vw;
-}
+
 
 .position-practice {
   /* centered div with a border of 5px with border radius of 5px */
@@ -13,3 +13,14 @@
 }
 
 /* INSERT YOUR CSS STYLES BELOW THIS COMMENT */
+
+}
+.h1style1{
+  font-size: 42pt;
+}
+.h1style2{
+  font-size: larger
+}
+.h1style3{
+  font-size: 23%
+}

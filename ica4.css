@@ -14,6 +14,7 @@
 
 /* INSERT YOUR CSS STYLES BELOW THIS COMMENT */
 
+/* q.1 */
 }
 .h1style1{
   font-size: 42pt;
@@ -25,6 +26,7 @@
   font-size: 23%
 }
 
+/* q.2 */
 .h2style1{
   color:darkslategrey
 }
@@ -35,6 +37,7 @@
   color: #DDF18C
 }
 
+/* q.3 */
 .pfont{
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-style: italic;
@@ -47,3 +50,18 @@
   font-family: 'Courier New', Courier, monospace;
   font-style: normal;
 }
+
+/* q.4 */
+.div1{
+  font-size: .1em;
+}
+.div2{
+  font-size: xx-small;
+}
+.div3{
+  font-size:75%
+}
+.div4{
+  font-size: large;
+}
+.div5{font-size: 3em}

@@ -109,3 +109,49 @@
   margin: 1em;
   background-color:rgb(118, 193, 223);
 }
+
+/* q.10 */
+.static{
+  position:static;
+  top:1em;
+  right:1em;
+  background-color:red;
+  border: 1em dotted green;
+  width:300px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.relative{
+  position:relative;
+  top:1em;
+  right:1em;
+  background-color:rgb(229, 255, 0);
+  border: 1em dashed rgb(107, 0, 128);
+  width:300px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.absolute{
+  position:absolute;
+  top:1em;
+  right:1em;
+  background-color:rgb(0, 238, 255);
+  border: 1em groove rgb(128, 109, 0);
+  width:300px; 
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.fixed{
+  position:fixed;
+  right:1em;
+  bottom:1em;
+  background-color:rgb(194, 130, 224);
+  border: 1em outset rgb(37, 15, 5);
+  width:300px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.sticky{
+  position:sticky;
+  top:5em;
+  background-color:rgb(134, 134, 134);
+  border: 1em outset rgb(53, 255, 205);
+  width:300px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}

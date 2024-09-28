@@ -72,3 +72,17 @@
   font-size: 3em;
   background-color: #681a68;
 }
+
+/* q.6 */
+.div61{
+  border: .5em solid slateblue;
+  border-radius:0%;
+}
+.div62{
+  border: 2pt dotted greenyellow;
+  border-radius:50%;
+}
+.div63{
+  border:15px double darkorchid;
+  border-radius:100%
+}

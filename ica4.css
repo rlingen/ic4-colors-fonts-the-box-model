@@ -34,3 +34,16 @@
 .h2style3{
   color: #DDF18C
 }
+
+.pfont{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+.qfont{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: oblique;
+}
+.bqfont{
+  font-family: 'Courier New', Courier, monospace;
+  font-style: normal;
+}

@@ -86,3 +86,26 @@
   border:15px double darkorchid;
   border-radius:100%
 }
+
+/* q.7 */
+.margin{
+  max-width:300px;
+  border: .2em solid black;
+  text-align: center;
+  background-color:rgb(247, 184, 113);
+}
+.border{
+  border: .2em solid black;
+  margin: 1em;
+  background-color: rgb(248, 224, 87);
+}
+.padding{
+  border: .2em solid black;
+  margin: 1em;
+  background-color:rgb(107, 212, 107);
+}
+.content{
+  border: .2em solid black;
+  margin: 1em;
+  background-color:rgb(118, 193, 223);
+}
